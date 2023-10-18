@@ -1,16 +1,16 @@
-# # #Conditional 
+# # #Conditional
 
 # temperature = 22
 # if temperature > 30:
 #     print("Wah! It is crazy hot today")
 # elif temperature > 20:
 #     print ("Let's go hiking!")
-    
+
 # elif temperature > 15:
 #     print ("Yak! Need some coffee!")
 # # print("Done")
 
-# # Ternary 
+# # Ternary
 # age = 30
 # if age > 18:
 #     print("Eligible")
@@ -20,23 +20,20 @@
 # # OR
 # message = "Eligible" if age >= 18 else "Not Eligible"
 # print(message)
- 
 
 
-
-
-# #Project 
+# #Project
 # weight = input ("What is you weight?")
 # comparison = input ("In (K)g or (L)bs ")
- 
+
 # K = weight
 # L = weight
- 
+
 # if K == weight:
 #     print ("Your weight in Kg is: " + str(weight) + " " "Kg")
 # else:
 #     print ("Your weight in (L)bs is: " + str(weight) + " " "(L)bs")
- 
+
 
 # #While Loops
 
@@ -209,7 +206,7 @@
 
 # if (high_income or good_credit) and not student:
 #     print("Give Loan")
-# else: 
+# else:
 #     print("Do not Give loan")
 
 
@@ -222,7 +219,6 @@
 #     print("Join College")
 
 
- 
 # # If age is between 18 to 65 yearsc
 # age = 22
 # if age > 18  <65:
@@ -230,15 +226,12 @@
 #     print("Eligible")
 
 
-
-
 # For Loops
-# Conditonals 
+# Conditonals
 # Ternary statements
 # Logical operators
-# Chaining 
-# 
-
+# Chaining
+#
 
 
 # # For loops
@@ -258,11 +251,11 @@
 
 #     # Nested Loops
 # for x in range (5):
-    # for y in range (3):   
-    #     print(f"{x}, {y}")
+# for y in range (3):
+#     print(f"{x}, {y}")
 
 
-# count  = 0 
+# count  = 0
 # for number in range (1, 10):
 #     if number % 2 == 0:
 #         count += 1
@@ -274,8 +267,8 @@
 # def greet (first_name, last_name):
 #     print(f"Hello!, {first_name} {last_name}")
 #     print("Nice to meet you!")
- 
- 
+
+
 # greet("Sam", "Kim")
 
 # # Keyword Argument
@@ -298,11 +291,10 @@
 #     for number in numbers:
 #         total *= number
 #     return total
- 
+
 # print(numbers(2, 3, 4, 5))
 
 # --------------------------------
-
 
 
 # # # **args
@@ -313,18 +305,87 @@
 # user(pos=1, name="Mike", age=20)
 
 
+# # FixxBuz Exercise
+# def fizzBuzz (input):
+#     if input % 3 ==0 and input % 5 == 0:
+#         return "FizzBuzz"
+#     if input % 3 == 0:
+#         return "Fizz"
+#     if input % 5 == 0:
+#         return "Buzz"
+#     else:
+#         return input
+# print(fizzBuzz(3))
 
-# FixxBuz Exercise
-def fizzBuzz (input):
-    if input % 3 ==0 and input % 5 == 0:
-        return "FizzBuzz"
-    if input % 3 == 0:
-        return "Fizz"
-    if input % 5 == 0: 
-        return "Buzz"
-    else:
-        return input
-print(fizzBuzz(3))
-    
+# DAY 23
+# LISTS
+# letter = ["a", "b", "c", "d"]
+# letter[0] = "A"  # Replacing an item in the list
+# zeros = [0] * 2
+# numbers = list(range(20))
+# chars = list("Hellow Kaka")
+# print(letter)
+# ---------------------------
 
- 
+
+# Replacing an item in the list
+# letter = ["a", "b", "c", "d"]
+# letter[0] = "A"
+# print(letter)
+# ---------------------------
+
+# # Accessing Items
+# numbers = list(range(20))
+# print(numbers[:-2])
+# -----------------------------
+
+
+# Unpacking Items in a list
+# numbers = [1, 2, 3, 4, 5, 6, 7]
+
+# first, *other, last = numbers
+# print(first, last)
+# print(other)
+
+# Looping over Lists
+# shoppingList = ["Rice", "Bread", "Sugar"]
+# for index, letters in enumerate(shoppingList):
+#     print(index, shoppingList)
+
+# Adding items in a list
+# shoppingList = ["Rice", "Bread", "Sugar"]
+
+# Add
+# shoppingList = ["Rice", "Bread", "Sugar"]
+# shoppingList.append("Bread")
+# # shoppingList.insert(0, "Chai")  # Added item
+# print(shoppingList)
+
+#
+# shoppingList = ["Rice", "Bread", "Sugar", "Pen", "Pen"]
+# # print(shoppingList.count("Bread"))  # Numbers of occuurances
+# # if "Bread" in shoppingList:
+# #     print(shoppingList.index("Pen"))  #Index position
+# if "Rice" in shoppingList:
+#     print(shoppingList.index("Rice"))
+
+# Sorting items
+# numbers = [32, 54, 10, 1]
+# numbers.sort(reverse=True)
+# print(sorted(numbers))
+# print(numbers)
+
+
+# Lambda Fx
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 84),
+#     ("Product3", 32),
+# ]
+
+# # We want to sort by price
+# items.sort(key=lambda item: item[1])
+# print(items)
+
+
+# Map Function
