@@ -231,7 +231,6 @@
 # Ternary statements
 # Logical operators
 # Chaining
-#
 
 
 # # For loops
@@ -361,7 +360,7 @@
 # # shoppingList.insert(0, "Chai")  # Added item
 # print(shoppingList)
 
-#
+
 # shoppingList = ["Rice", "Bread", "Sugar", "Pen", "Pen"]
 # # print(shoppingList.count("Bread"))  # Numbers of occuurances
 # # if "Bread" in shoppingList:
@@ -388,4 +387,80 @@
 # print(items)
 
 
-# Map Function
+# DAY 24
+# Filtering items in a list
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 9),
+#     ("Product3", 12),
+#     ("Product3", 40),
+#     ("Product3", 2),
+# ]
+
+# filtered = list(filter(lambda item: item[1] <= 10, items))
+# print(filtered)
+# ............................
+
+# List COMPREHENSION
+# items = [
+#     ("Product1", 10),
+#     ("Product2", 9),
+#     ("Product3", 12),
+#     ("Product4", 40),
+#     ("Product5", 2),
+# ]
+
+# # Extract prices using map and lambda
+# prices = list(map(lambda item: item[1], items))
+
+# # Extract prices using list comprehension
+# prices = [item[1] for item in items]
+
+# # Filter items with prices greater than or equal to 10 using filter and lambda
+# filtered = list(filter(lambda item: item[1] >= 10, items))
+
+# # Filter items with prices greater than or equal to 10 using list comprehension
+# filtered = [item for item in items if item[1] >= 10]
+
+# print(filtered)
+# ----------------------------------
+
+
+# ZIPPING ITEMS IN A LIST
+# list1 = [1, 2, 3]
+# list2 = [1, 2, 3]
+
+# print((zip(list1, list2)))
+
+# -----------------------------
+# STACKS
+# browsing_session = [1] #Create an empty list
+# browsing_session.append(1) # Append/ Add the integer 1 to the list
+# browsing_session.app()
+# if not browsing_session:
+#     browsing_session[-1]
+
+# FiFo - Stacking
+# from collections import deque
+
+# queue = deque([])
+# queue.append(1)
+# queue.append(2)
+# queue.append(3)
+# queue.popleft()
+# print(queue)
+# if not queue:
+#     print("Empty")
+# -----------------------
+
+
+# SETS
+numbers = [1, 1, 2, 3, 4]
+first = set(numbers)
+second = {1, 2}
+
+
+print(first | second)
+print(first & second)
+print(first & second)
+print(first - second)
