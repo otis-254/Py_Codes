@@ -475,7 +475,7 @@
 
 # EXEPTIONS
 # try:
-#     with open("app.py") as file:
+#      with open("app.py") as file:
 #         print("Fle opened")
 
 #         age = int(input("Age: "))
@@ -486,7 +486,7 @@
 #     print("Second comment")
 
 
-# CLASSES
+# CLASSES ---
 # class Points:
 #     def draw(sefl):
 #         print("draw")
@@ -499,3 +499,20 @@
 
 # =========================
 #  instanaces vs class method
+
+
+# Day
+# PRIVATE NUMBERS
+# INHERITANCE
+# Multi Level inheritence
+# Multi Inheritence
+# Multi Inheritence Real Example in Implementation
+# ABC methods
+# Duck typing
+# Extending Built in Types
+
+# ====================================
+
+
+    def read(self):
+        print("Read data from the Network")
