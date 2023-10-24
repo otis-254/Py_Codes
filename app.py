@@ -454,13 +454,48 @@
 # -----------------------
 
 
-# SETS
-numbers = [1, 1, 2, 3, 4]
-first = set(numbers)
-second = {1, 2}
+# # SETS
+# numbers = [1, 1, 2, 3, 4]
+# first = set(numbers)
+# second = {1, 2}
 
 
-print(first | second)
-print(first & second)
-print(first & second)
-print(first - second)
+# print(first | second)
+# print(first & second)
+# print(first & second)
+# print(first - second)
+
+
+# -----------------------
+# try:
+#     age = int(input("Age: "))
+# except ValueError:
+#     print("Value")
+# ------------------------------
+
+# EXEPTIONS
+# try:
+#     with open("app.py") as file:
+#         print("Fle opened")
+
+#         age = int(input("Age: "))
+#         xfactor = 10 / age
+# except (ValueError, ZeroDivisionError):
+#     print("You have not entered a valid value")
+# else:
+#     print("Second comment")
+
+
+# CLASSES
+# class Points:
+#     def draw(sefl):
+#         print("draw")
+
+
+# point = Points()
+# print(type(point))
+# print(isinstance(point, Points))
+
+
+# =========================
+#  instanaces vs class method
