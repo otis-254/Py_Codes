@@ -514,5 +514,45 @@
 # ====================================
 
 
-    def read(self):
-        print("Read data from the Network")
+# ===========================
+# DAY 29: MODULES
+# from sales import calc_tax, calc_shipping
+
+# calc_shipping()
+# calc_tax()
+
+
+# Module paths
+# import sys
+# import sales
+
+# print(sys.path)
+
+
+# # Module Packages
+# # from ecommerce.sales import calc_tax, calc_shipping
+# from ecommerce import sales
+
+
+# The def function
+# ==============================
+# from ecommerce.shopping import sales
+
+# # print(dir(sales))
+# print(sales.__name__)
+# print(sales.__package__)
+
+
+# ============================
+# Pthon Standard Library
+# (PATHS)
+from pathlib import Path
+
+path = Path("ecommerce/__init__.py")
+path.is_file()
+path.exists()
+
+print(path.name)
+print(path.stem)
+print(path.suffix)
+print(path.parent)
